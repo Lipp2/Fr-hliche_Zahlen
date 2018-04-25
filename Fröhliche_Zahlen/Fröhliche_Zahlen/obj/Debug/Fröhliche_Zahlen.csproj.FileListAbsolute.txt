@@ -1,0 +1,5 @@
+C:\Users\BrunzePh\Source\Repos\Fröhliche_Zahlen\Fröhliche_Zahlen\Fröhliche_Zahlen\bin\Debug\Fröhliche_Zahlen.dll
+C:\Users\BrunzePh\Source\Repos\Fröhliche_Zahlen\Fröhliche_Zahlen\Fröhliche_Zahlen\bin\Debug\Fröhliche_Zahlen.pdb
+C:\Users\BrunzePh\Source\Repos\Fröhliche_Zahlen\Fröhliche_Zahlen\Fröhliche_Zahlen\obj\Debug\Fröhliche_Zahlen.csprojResolveAssemblyReference.cache
+C:\Users\BrunzePh\Source\Repos\Fröhliche_Zahlen\Fröhliche_Zahlen\Fröhliche_Zahlen\obj\Debug\Fröhliche_Zahlen.dll
+C:\Users\BrunzePh\Source\Repos\Fröhliche_Zahlen\Fröhliche_Zahlen\Fröhliche_Zahlen\obj\Debug\Fröhliche_Zahlen.pdb
