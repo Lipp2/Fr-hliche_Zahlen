@@ -21,8 +21,8 @@ namespace Test_Fröhliche_Zahlen
         [Test, Category("Programmtest")]
         public void Programmtest()
         {
-            var ergebnis = Start_FZ.Berechnen("4");
-            Assert.AreEqual("fröhliche Zahl :)", ergebnis);
+            var ergebnis = Start_FZ.FroheZahl(100);
+            Assert.AreEqual(false, ergebnis);
         }
     }
 }
