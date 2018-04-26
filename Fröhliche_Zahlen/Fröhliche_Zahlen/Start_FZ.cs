@@ -8,41 +8,49 @@ namespace Fröhliche_Zahlen
 {
     public class Start_FZ
     {
-        internal static List<int> Teilen(string value)
+        internal static int Eingabe_FroheZahl(int value)
         {
-            string zwischenspeicher;
-            List<int> zahlen = new List<int>();
-            for (int i = 0; i < value.Length; i++)
-            {
-                int startIndex = i;
-                int length = 1;
-                zwischenspeicher = value.Substring(startIndex, length);
-                zahlen.Add(Convert.ToInt32(zwischenspeicher));
-            }
-            return zahlen;
+            int zahl = value;
+            return zahl;
         }
 
-        internal static bool FroheZahl(int nummer)
+        internal static bool Berechne_FroheZahl(int value)
         {
-            int Zahl;
             int ergebnis = 0;
             bool traurig = false;
-            while (nummer != 1 && traurig == false)
+            int zahl = Eingabe_FroheZahl(value);
+            while (zahl != 1 && traurig == false)
             {
-                while (nummer != 0 && traurig == false)
+                while (zahl != 0 && traurig == false)
                 {
-                    Zahl = nummer % 10;
-                    ergebnis += Zahl * Zahl;
-                    nummer = nummer / 10;
+                    ergebnis += (int)Math.Pow(zahl % 10, 2);
+                    zahl = zahl / 10;
                 }
-                nummer = ergebnis;
-                if (nummer == 4)
+                zahl = ergebnis;
+                if (zahl == 4)
                 {
                     return true;
                 }
                 ergebnis = 0;
             }
             return false;
+        }
+
+        internal static string Ausgabe_FroheZahl(int value)
+        {
+            var zustand = Berechne_FroheZahl(value);
+            string msg = "";
+            if (zustand == false)
+            {
+                msg = "Eine sehr fröhliche Zahl :)";
+                return msg; 
+            }
+            else
+            {
+                msg = "Eine traurige Zahl :(";
+                return msg;
+            }
+
         }
 
         //internal static string Berechnen(string value)

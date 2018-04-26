@@ -12,17 +12,24 @@ namespace Test_Fröhliche_Zahlen
     public class Test
     {
         [Test, Category("Akzeptanztest")]
-        public void Teilen_test()
+        public void Eingabe_test()
         {
-            var ergebnis = Start_FZ.Teilen("19");
-            Assert.AreEqual(9, ergebnis[1]);
+            var ergebnis = Start_FZ.Eingabe_FroheZahl(19);
+            Assert.AreEqual(19, ergebnis);
         }
 
         [Test, Category("Programmtest")]
         public void Programmtest()
         {
-            var ergebnis = Start_FZ.FroheZahl(100);
-            Assert.AreEqual(false, ergebnis);
+            var ergebnis = Start_FZ.Berechne_FroheZahl(24);
+            Assert.AreEqual(true, ergebnis); // ture = traurig, false = fröhlich
+        }
+
+        [Test, Category("nocheintest")]
+        public void Ausgabetest()
+        {
+            var ergebnis = Start_FZ.Ausgabe_FroheZahl(24);
+            Assert.AreEqual("Eine traurige Zahl :(", ergebnis); // "Eine sehr fröhliche Zahl :)" | "Eine traurige Zahl :("
         }
     }
 }
