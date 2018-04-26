@@ -8,6 +8,7 @@ namespace Fröhliche_Zahlen
 {
     public class Start_FZ
     {
+        //Schönen Feierabend wünsch ich Ihnen!
         internal static int Eingabe_FroheZahl(int value)
         {
             int zahl = value;
