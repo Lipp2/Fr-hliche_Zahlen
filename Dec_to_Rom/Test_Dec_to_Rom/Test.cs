@@ -12,10 +12,16 @@ namespace Test_Dec_to_Rom
     public class Test
     {
         [Test, Category("Akzeptanztest")]
-        public void Blabla()
+        public void Zahlen_Test()
         {
             var ergebnis = Start_Dec_to_Rom.ToRoman(564);
             Assert.AreEqual("DLXIV", ergebnis);
+            var ergebnis2 = Start_Dec_to_Rom.ToRoman(100);
+            Assert.AreEqual("C", ergebnis2);
+            var ergebnis3 = Start_Dec_to_Rom.ToRoman(354);
+            Assert.AreEqual("CCCLIV", ergebnis3);
+            var ergebnis4 = Start_Dec_to_Rom.ToRoman(42);
+            Assert.AreEqual("XLII", ergebnis4);
         }
     }
 }
