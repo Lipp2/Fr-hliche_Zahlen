@@ -8,7 +8,7 @@ namespace Russian_plebmultiplicator
 {
     public class pleb_Start
     {
-        internal static int[] Vergleichen(int x, int y)
+        internal static int[] Vergleichen_zahl1_zahl2(int x, int y)
         {
             int[] zahl1 = Zahl1_Dividieren(x);
             int[] zahl2 = Zahl2_Multiplizieren(x, y);
@@ -52,7 +52,7 @@ namespace Russian_plebmultiplicator
         internal static int Ergebnis_addieren(int x, int y)
         {
             int ergebnis = 0;
-            int[] zahlen = Vergleichen(x, y);
+            int[] zahlen = Vergleichen_zahl1_zahl2(x, y);
 
             for (int i = 0; i != zahlen.Length; i++)
             {

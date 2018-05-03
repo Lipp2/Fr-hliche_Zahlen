@@ -42,7 +42,7 @@ namespace Test_Pleb
         [Test, Category("Vergleichen")]
         public void Vergleichen()
         {
-            var ergebnis = pleb_Start.Vergleichen(47, 42);
+            var ergebnis = pleb_Start.Vergleichen_zahl1_zahl2(47, 42);
             Assert.AreEqual(0, ergebnis[4]);
         }
 
