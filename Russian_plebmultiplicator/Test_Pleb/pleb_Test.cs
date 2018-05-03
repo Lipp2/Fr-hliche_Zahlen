@@ -22,7 +22,7 @@ namespace Test_Pleb
         public void Zahlx_array()
         {
             var ergebnis = pleb_Start.Zahl1_Dividieren(47);
-            Assert.AreEqual(1, ergebnis[5]);
+            Assert.AreEqual(new[] {47, 23, 11, 5, 2, 1}, ergebnis);
         }
 
         [Test, Category("Zahl2")]
@@ -36,7 +36,7 @@ namespace Test_Pleb
         public void Zahly_array()
         {
             var ergebnis = pleb_Start.Zahl2_Multiplizieren(47, 42);
-            Assert.AreEqual(84, ergebnis[1]);
+            Assert.AreEqual(new[] {42, 84, 168, 336, 0, 1344 }, ergebnis);
         }
 
         [Test, Category("Vergleichen")]
@@ -44,6 +44,13 @@ namespace Test_Pleb
         {
             var ergebnis = pleb_Start.Vergleichen(47, 42);
             Assert.AreEqual(0, ergebnis[4]);
+        }
+
+        [Test, Category("Ergebnis")]
+        public void Ergebnis()
+        {
+            var ergebnis = pleb_Start.Ergebnis_addieren(47, 42);
+            Assert.AreEqual(1974, ergebnis);
         }
     }
 }

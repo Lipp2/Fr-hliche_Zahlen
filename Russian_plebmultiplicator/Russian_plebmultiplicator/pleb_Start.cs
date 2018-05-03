@@ -48,6 +48,19 @@ namespace Russian_plebmultiplicator
             int[] ergebnis = zwischenergebnis.ToArray();
             return ergebnis;
         }
+
+        internal static int Ergebnis_addieren(int x, int y)
+        {
+            int ergebnis = 0;
+            int[] zahlen = Vergleichen(x, y);
+
+            for (int i = 0; i != zahlen.Length; i++)
+            {
+                ergebnis += zahlen[i];
+            }
+
+            return ergebnis;
+        }
     }
 
 
