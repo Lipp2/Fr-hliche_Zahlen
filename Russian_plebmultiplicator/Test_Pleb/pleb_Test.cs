@@ -36,14 +36,14 @@ namespace Test_Pleb
         public void Zahly_array()
         {
             var ergebnis = pleb_Start.Zahl2_Multiplizieren(47, 42);
-            Assert.AreEqual(new[] {42, 84, 168, 336, 0, 1344 }, ergebnis);
+            Assert.AreEqual(new[] {42, 84, 168, 336, 672, 1344 }, ergebnis);
         }
 
         [Test, Category("Vergleichen")]
         public void Vergleichen()
         {
             var ergebnis = pleb_Start.Vergleichen_zahl1_zahl2(47, 42);
-            Assert.AreEqual(0, ergebnis[4]);
+            Assert.AreEqual(new[] { 42, 84, 168, 336, 0, 1344 }, ergebnis);
         }
 
         [Test, Category("Ergebnis")]
